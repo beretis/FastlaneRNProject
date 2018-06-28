@@ -45,12 +45,12 @@ platform :ios do
 
     # upload to Beta by Crashlytics
     # crashlytics(
-    #   api_token: "afd46a717ae25d778425d8de3c52719da3c5789e",
-    #   build_secret: "8dc6e8b60488a2f3c3580ead8ef4ef0af5615cf6360b67cfa7489296314b47e8"
+    #   api_token: "YOURAPITOKEN",
+    #   build_secret: "YOURBUILDSECRET"
     # )
   end
 
-  lane :testFlight do
+  lane :testFlightLane do
     
     match(
       type: "appstore"

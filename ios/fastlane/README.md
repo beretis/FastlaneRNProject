@@ -31,9 +31,9 @@ Increment the version and build number
 fastlane ios beta
 ```
 
-### ios testFlight
+### ios testFlightLane
 ```
-fastlane ios testFlight
+fastlane ios testFlightLane
 ```
 
 ### ios release
