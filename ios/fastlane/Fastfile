@@ -1,0 +1,107 @@
+# This file contains the fastlane.tools configuration
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    version_bump_project
+  
+      # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+      # cocoapods
+      # carthage
+  end
+  
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
+  
+  desc "Increment the version and build number"  
+  lane :version_bump_project do |options|  
+    # Set build number to current date and time
+    build_number = Time.new.strftime("%Y.%m.%d.%H.%M")
+    ENV["BUILD_NUMBER"] = build_number
+    increment_build_number build_number: build_number
+    # Set version number conforming the bump type
+    if options[:bump_type]
+      increment_version_number bump_type: options[:bump_type]
+    end
+  end  
+
+  lane :beta do
+    match(
+     type: "adhoc",
+     force_for_new_devices: true
+    )
+
+    gym(
+      scheme: "FastlaneRNProject",
+      configuration: "AdHoc",
+      export_method: "ad-hoc"
+    )
+
+    # upload to Beta by Crashlytics
+    # crashlytics(
+    #   api_token: "afd46a717ae25d778425d8de3c52719da3c5789e",
+    #   build_secret: "8dc6e8b60488a2f3c3580ead8ef4ef0af5615cf6360b67cfa7489296314b47e8"
+    # )
+  end
+
+  lane :testFlight do
+    
+    match(
+      type: "appstore"
+    )
+
+    gym(
+      scheme: "FastlaneRNProject",
+      configuration: "Release",
+      export_method: "app-store"
+    )
+    testflight
+  end
+
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym() # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+
+  lane :getProductionCert do
+     match(
+      type: "appstore"
+    )
+  end
+
+  lane :getDevCert do
+    match(
+      type: "development",
+      app_identifier: "*",
+      force_for_new_devices: true
+    )
+  end
+
+
+  after_all do |lane|
+  # This block is called, only if the executed lane was successful
+
+  # slack(
+  #   message: "Successfully deployed new App Update."
+  # )
+  end
+
+  error do |lane, exception|
+  # slack(
+  #   message: exception.message,
+  #   success: false
+  # )
+  end
+
+end
