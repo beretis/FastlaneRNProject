@@ -39,7 +39,7 @@ platform :ios do
 
     gym(
       scheme: "FastlaneRNProject",
-      configuration: "AdHoc",
+      configuration: "Ad-hoc",
       export_method: "ad-hoc"
     )
 
