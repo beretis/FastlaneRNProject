@@ -1226,6 +1226,7 @@
 				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = ZSU72LARHF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-fcm/ios";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1249,6 +1250,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
 				DEVELOPMENT_TEAM = 4CRG2TF545;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-fcm/ios";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1307,6 +1309,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
 				DEVELOPMENT_TEAM = 4CRG2TF545;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-fcm/ios";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
