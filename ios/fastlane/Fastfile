@@ -6,13 +6,13 @@
 default_platform(:ios)
 
 platform :ios do
-  before_all do
-    version_bump_project
+  # before_all do
+  #   version_bump_project
   
-      # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-      # cocoapods
-      # carthage
-  end
+  #     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+  #     # cocoapods
+  #     # carthage
+  # end
   
   desc "Runs all the tests"
   lane :test do
