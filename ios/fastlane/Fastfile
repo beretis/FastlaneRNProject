@@ -65,7 +65,9 @@ platform :ios do
       configuration: "Release",
       export_method: "app-store"
     )
-    testflight
+    pilot(
+      skip_waiting_for_build_processing: true
+    )
   end
 
 
