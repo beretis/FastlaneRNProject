@@ -32,6 +32,8 @@ platform :ios do
   end  
 
   lane :beta do
+    sh "npm install"
+
     match(
      type: "adhoc",
      force_for_new_devices: true
