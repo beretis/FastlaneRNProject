@@ -91,7 +91,7 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		2822DCEB20ECFE7C001B716E /* PBXContainerItemProxy */ = {
+		282DE4F020F2478500B368E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 1;
@@ -597,7 +597,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2822DCEC20ECFE7C001B716E /* PBXTargetDependency */,
+				282DE4F120F2478500B368E8 /* PBXTargetDependency */,
 			);
 			name = FastlaneRNProject;
 			productName = "Hello World";
@@ -1016,10 +1016,10 @@
 			target = 13B07F861A680F5B00A75B9A /* FastlaneRNProject */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
-		2822DCEC20ECFE7C001B716E /* PBXTargetDependency */ = {
+		282DE4F120F2478500B368E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
-			targetProxy = 2822DCEB20ECFE7C001B716E /* PBXContainerItemProxy */;
+			targetProxy = 282DE4F020F2478500B368E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1081,7 +1081,7 @@
 				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = ZSU72LARHF;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-fcm/ios";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1105,7 +1105,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
 				DEVELOPMENT_TEAM = 4CRG2TF545;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-fcm/ios";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1164,7 +1164,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
 				DEVELOPMENT_TEAM = 4CRG2TF545;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-fcm/ios";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

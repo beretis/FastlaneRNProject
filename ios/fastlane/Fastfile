@@ -51,6 +51,8 @@ platform :ios do
   end
 
   lane :testFlightLane do
+
+    sh "npm install"
     
     match(
       type: "appstore"
