@@ -26,6 +26,11 @@ Runs all the tests
 fastlane ios version_bump_project
 ```
 Increment the version and build number
+### ios generate_test_app
+```
+fastlane ios generate_test_app
+```
+
 ### ios beta
 ```
 fastlane ios beta
@@ -41,6 +46,11 @@ fastlane ios testFlightLane
 fastlane ios release
 ```
 Deploy a new version to the App Store
+### ios whatever
+```
+fastlane ios whatever
+```
+
 ### ios getProductionCert
 ```
 fastlane ios getProductionCert

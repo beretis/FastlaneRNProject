@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i '' '/CURRENT_VERSION/d' ./AppConfig.js
