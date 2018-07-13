@@ -27,11 +27,25 @@ platform :ios do
     increment_build_number build_number: build_number
     # Set version number conforming the bump type
     if options[:bump_type]
+      sh "echo we are bumping this baby tooo"
       increment_version_number bump_type: options[:bump_type]
+      ENV["BUILD_NUMBER"] = build_number
     end
   end  
 
+  lane :generate_test_app do
+    xcbuild(
+        project: "FastlaneRNProject.xcodeproj",
+        scheme: "FastlaneRNProject",
+        configuration: "Debug",
+        xcargs: "-sdk iphonesimulator SYMROOT='/var/tmp/'"
+    )
+    sh "zip -r \"/var/tmp/\${BUILD_NUMBER}\.zip\" /var/tmp/Debug-iphonesimulator/FastlaneRNProject.app"
+end
+
   lane :beta do
+    sh "npm install"
+
     match(
      type: "adhoc",
      force_for_new_devices: true
@@ -50,8 +64,7 @@ platform :ios do
     # )
   end
 
-  lane :testFlightLane do
-    
+  lane :testFlightLane do    
     match(
       type: "appstore"
     )
@@ -61,17 +74,27 @@ platform :ios do
       configuration: "Release",
       export_method: "app-store"
     )
-    testflight
+    pilot(
+      skip_waiting_for_build_processing: true
+    )
   end
 
 
   desc "Deploy a new version to the App Store"
   lane :release do
-    # match(type: "appstore")
+    match(type: "appstore")
     # snapshot
     gym() # Build your app - more options available
     deliver(force: true)
     # frameit
+  end
+
+  lane :whatever do 
+    sh "npm install"
+    version_bump_project(bump_type: "patch")
+    generate_test_app
+    testFlightLane
+    release
   end
 
   lane :getProductionCert do

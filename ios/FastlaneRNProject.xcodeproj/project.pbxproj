@@ -91,7 +91,7 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		2822DCEB20ECFE7C001B716E /* PBXContainerItemProxy */ = {
+		282DE4F020F2478500B368E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 1;
@@ -597,7 +597,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2822DCEC20ECFE7C001B716E /* PBXTargetDependency */,
+				282DE4F120F2478500B368E8 /* PBXTargetDependency */,
 			);
 			name = FastlaneRNProject;
 			productName = "Hello World";
@@ -1016,10 +1016,10 @@
 			target = 13B07F861A680F5B00A75B9A /* FastlaneRNProject */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
-		2822DCEC20ECFE7C001B716E /* PBXTargetDependency */ = {
+		282DE4F120F2478500B368E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
-			targetProxy = 2822DCEB20ECFE7C001B716E /* PBXContainerItemProxy */;
+			targetProxy = 282DE4F020F2478500B368E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1078,14 +1078,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
+				CURRENT_PROJECT_VERSION = 2018.07.09.14.58;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 4CRG2TF545;
-				HEADER_SEARCH_PATHS = (
-					"$(REACT_HEADERS_PATH)",
-					"$(SRCROOT)/../node_modules/react-native-fcm/ios",
-					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
-				);
+				DEVELOPMENT_TEAM = ZSU72LARHF;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1095,9 +1091,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beretis.fastlanernproject;
 				PRODUCT_NAME = FastlaneRNProject;
-				PROVISIONING_PROFILE = "828731d4-906c-427b-80c8-24d4861725e3";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.beretis.fastlanernproject";
-				REACT_HEADERS_PATH = "";
+				PROVISIONING_PROFILE = "80b517ac-b9c7-4041-b31e-1cd8c58ebfb7";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1108,13 +1103,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
+				CURRENT_PROJECT_VERSION = 2018.07.09.14.58;
 				DEVELOPMENT_TEAM = 4CRG2TF545;
-				HEADER_SEARCH_PATHS = (
-					"$(REACT_HEADERS_PATH)",
-					"$(SRCROOT)/../node_modules/react-native-fcm/ios",
-					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1126,7 +1117,6 @@
 				PRODUCT_NAME = FastlaneRNProject;
 				PROVISIONING_PROFILE = "4b2b4b00-1186-436e-9916-f359635882f9";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.beretis.fastlanernproject";
-				REACT_HEADERS_PATH = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1172,14 +1162,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)";
-				CURRENT_PROJECT_VERSION = 2018.06.28.13.49;
+				CURRENT_PROJECT_VERSION = 2018.07.09.14.58;
 				DEVELOPMENT_TEAM = 4CRG2TF545;
-				HEADER_SEARCH_PATHS = (
-					"$(REACT_HEADERS_PATH)",
-					"$(SRCROOT)/../node_modules/react-native-fcm/ios",
-					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastlaneRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1191,8 +1176,6 @@
 				PRODUCT_NAME = FastlaneRNProject;
 				PROVISIONING_PROFILE = "6545569a-45fe-412e-88dd-d4f9c61c65a6";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.beretis.fastlanernproject";
-				REACT_HEADERS_PATH = "$(BUILD_DIR)/Release-$(PLATFORM_NAME)/include";
-				"REACT_HEADERS_PATH[arch=*]" = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Ad-hoc";
